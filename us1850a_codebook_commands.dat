@@ -1,0 +1,4 @@
+type = HTML
+DDL = ./us1850a.ddl
+varlist = ./us1850a_vargroups.dat
+savefile = ./Doc/nes
