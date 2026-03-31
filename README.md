@@ -1,4 +1,4 @@
-# SDA Title Issue Example
+# SDA Missing Title Issue Example
 
 ## Reproduction
 1. `/path/to/sda/makesda -l us1850a.ddl -d us1850a.dat`
