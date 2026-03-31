@@ -1,0 +1,18 @@
+======================================================================
+MAKESDA messages: Mar 31, 2026  (Tue 09:49 AM CDT)
+======================================================================
+Preliminary checks completed. Ready to make new SDA variables...
+
+Reading DDL item definitions...
+
+Computing data parameters for 3 variables in this pass...
+
+Writing 3 SDA variables in this pass...
+"CASEID" created (some illegal codes converted to system-missing)
+"rectype" created
+"year" created
+
+MAKESDA done.
+Variables skipped: 0
+Variables created: 3
+   (variables containing illegal codes converted to system missing: 1)

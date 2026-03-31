@@ -1,0 +1,12 @@
+=================================================
+Codebook message log: Mar 31, 2026 (Tue 09:50 AM)
+=================================================
+ERROR: Cannot open file for writing codebook output. File name: ./Doc/nes.htm
+ 
+=================================================
+Codebook message log: Mar 31, 2026 (Tue 09:50 AM)
+=================================================
+No warnings/errors during this run of codebook.
+Total items/variables processed: 2
+
+ 

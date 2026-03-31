@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title>  </title>
+<style>
+body {
+font-family: arial, helvetica, verdana, geneva, sans-serif;
+}
+h1 { font-size: 1.7em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h1.small { font-size: 1.12em; margin-top: 0em; margin-bottom: 0em; }
+h2.small { font-size: 1em; font-weight: normal; margin-top: 0em; margin-bottom: 0em; }
+pre { font-size: 1em; font-family: "Lucida Console", Monaco, Consolas, "Courier New", Courier, monospace; }
+table.dflt {
+border-collapse: collapse;
+}
+table.dflt td, table.dflt th {
+padding: 5px;
+border: 1px solid #C0C0C0;
+}
+table.noborder {
+border-collapse: collapse;
+margin-top: 10px;
+}
+table.noborder td, table.noborder th {
+padding: 2px;
+border: none;
+}
+table.freqdist {
+border-collapse: collapse;
+margin-top: 10px;
+}
+table.freqdist td, table.freqdist th {
+padding: 2px 5px 2px 15px;
+border: none;
+}
+span.varname {
+font-size: larger;
+font-weight: bold;
+background-color: #ff9999;
+padding: 2px 5px;
+}
+span.varlabel {
+font-size: larger;
+font-weight: bold;
+padding-left: 10px;
+}
+div.vardesc {
+outline: 1px solid #C0C0C0;
+overflow: auto;
+margin: 20px;
+padding: 5px;
+}
+div.barchart {
+background-color: #009999;
+height: 1.0em;
+}
+.confint {
+font-size: smaller;
+font-style: italic;
+white-space: nowrap;
+}
+
+.sidenav {
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 8px;
+  list-style: none;
+  color: #333;
+}
+
+.sidenav ul {
+  padding: 0px;
+  margin-left: 0px;
+  list-style:none;
+}
+
+.sidenav ul li a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  display: block;
+}
+
+.sidenav ul li a:hover, ul li a:focus {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+}
+
+.sidenav ul li a.current {
+  font-weight: bold;
+  background-color: #336699;
+  color: white;
+}
+
+.main {
+  margin-left: 160px; /* Same width as the sidebar + left position in px */
+  padding: 2px 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+span.genericheading {
+background-color: #93BED5;
+font-weight: bold;
+padding: 2px 5px;
+text-align: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="sidenav">
+<nav aria-label="Codebook Table of Contents">
+<ul>
+<li><a href = "nes.htm" >Title Page</a></li>
+<li><hr>
+INDEXES
+<ul>
+<li><a href = "nesx01.htm" class="current">Sequential Variable List</a></li>
+<li><a href = "nesfx0.htm" >Alphabetical Variable List</a></li>
+<li><hr></li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+
+
+<div class="main">
+<hr>
+<h1>  </h1>
+<hr>
+<h2 id="1.HEADING">Household </h2>
+
+<h3 id="2.HEADING">Technical </h3>
+
+<div class="vardesc">
+
+<div style="padding-top: 10px;">
+<span id="rectype" class="varname">rectype</span><span class="varlabel">Record type</span>
+</div>
+
+<table class="freqdist">
+<tr style="text-align:right;">
+<td style="text-align:right;width: 100px;background-color: #93BED5;"></td>
+<th style="text-align:right;background-color: #93BED5;" scope=col>Percent</th>
+<th style="text-align:right;background-color: #93BED5;" scope=col>N</th>
+<th style="text-align:left;background-color: #93BED5;" scope=col>Value</th>
+<th style="text-align:center;background-color: #93BED5;" scope=col>Label</th>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 100.0%;float: right;"></div></td>
+<td>100.0</td>
+<td>2</td>
+<td style="text-align:left;"><strong>H</strong></td>
+<td style="text-align:left;"><BR></td>
+</tr>
+<tr style="text-align:right;">
+<td><BR></td>
+<td style="text-align:right;"><strong>100.0</strong></td>
+<td style="text-align:right;"><strong>2</strong></td>
+<td style="text-align:right;"><br></td>
+<td style="text-align:center;background-color: #93BED5;"><strong>Total</strong></td>
+</tr>
+</table>
+
+<table class="noborder">
+<tr>
+<th style="text-align:center;background-color: #93BED5;" colspan=2>Properties</th>
+</tr>
+<tr style="text-align:left;">
+<th style="text-align:left;">Data type:</th>
+<td style="text-align:left;">character</td>
+</tr>
+<tr style="text-align:left;">
+<th style="text-align:left;">Record/column:</th>
+<td style="text-align:left;">1/1
+</td>
+</tr>
+</table>
+
+</div>
+
+<div class="vardesc">
+
+<div style="padding-top: 10px;">
+<span id="year" class="varname">year</span><span class="varlabel">Census year</span>
+</div>
+
+<table class="freqdist">
+<tr style="text-align:right;">
+<td style="text-align:right;width: 100px;background-color: #93BED5;"></td>
+<th style="text-align:right;background-color: #93BED5;" scope=col>Percent</th>
+<th style="text-align:right;background-color: #93BED5;" scope=col>N</th>
+<th style="text-align:right;background-color: #93BED5;" scope=col>Value</th>
+<th style="text-align:center;background-color: #93BED5;" scope=col>Label</th>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 100.0%;float: right;"></div></td>
+<td>100.0</td>
+<td>2</td>
+<td><strong>1850</strong></td>
+<td style="text-align:left;">1850</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1860</strong></td>
+<td style="text-align:left;">1860</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1870</strong></td>
+<td style="text-align:left;">1870</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1880</strong></td>
+<td style="text-align:left;">1880</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1900</strong></td>
+<td style="text-align:left;">1900</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1910</strong></td>
+<td style="text-align:left;">1910</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1920</strong></td>
+<td style="text-align:left;">1920</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1930</strong></td>
+<td style="text-align:left;">1930</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1940</strong></td>
+<td style="text-align:left;">1940</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1950</strong></td>
+<td style="text-align:left;">1950</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1960</strong></td>
+<td style="text-align:left;">1960</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1970</strong></td>
+<td style="text-align:left;">1970</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1980</strong></td>
+<td style="text-align:left;">1980</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>1990</strong></td>
+<td style="text-align:left;">1990</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2000</strong></td>
+<td style="text-align:left;">2000</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2001</strong></td>
+<td style="text-align:left;">2001</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2002</strong></td>
+<td style="text-align:left;">2002</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2003</strong></td>
+<td style="text-align:left;">2003</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2004</strong></td>
+<td style="text-align:left;">2004</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2005</strong></td>
+<td style="text-align:left;">2005</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2006</strong></td>
+<td style="text-align:left;">2006</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2007</strong></td>
+<td style="text-align:left;">2007</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2008</strong></td>
+<td style="text-align:left;">2008</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2009</strong></td>
+<td style="text-align:left;">2009</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2010</strong></td>
+<td style="text-align:left;">2010</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2011</strong></td>
+<td style="text-align:left;">2011</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2012</strong></td>
+<td style="text-align:left;">2012</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2013</strong></td>
+<td style="text-align:left;">2013</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2014</strong></td>
+<td style="text-align:left;">2014</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2015</strong></td>
+<td style="text-align:left;">2015</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2016</strong></td>
+<td style="text-align:left;">2016</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2017</strong></td>
+<td style="text-align:left;">2017</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2018</strong></td>
+<td style="text-align:left;">2018</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2019</strong></td>
+<td style="text-align:left;">2019</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2020</strong></td>
+<td style="text-align:left;">2020</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2021</strong></td>
+<td style="text-align:left;">2021</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2022</strong></td>
+<td style="text-align:left;">2022</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2023</strong></td>
+<td style="text-align:left;">2023</td>
+</tr>
+<tr style="text-align:right;vertical-align:top;">
+<td style="padding-left: 20px;"><div class=barchart style="width: 0.0%;float: right;"></div></td>
+<td>0.0</td>
+<td>0</td>
+<td><strong>2024</strong></td>
+<td style="text-align:left;">2024</td>
+</tr>
+<tr style="text-align:right;">
+<td><BR></td>
+<td style="text-align:right;"><strong>100.0</strong></td>
+<td style="text-align:right;"><strong>2</strong></td>
+<td style="text-align:right;"><br></td>
+<td style="text-align:center;background-color: #93BED5;"><strong>Total</strong></td>
+</tr>
+</table>
+
+<table class="noborder">
+<tr>
+<th style="text-align:center;background-color: #93BED5;" colspan=2>Properties</th>
+</tr>
+<tr style="text-align:left;">
+<th style="text-align:left;">Data type:</th>
+<td style="text-align:left;">numeric</td>
+</tr>
+<tr style="text-align:left;">
+<th style="text-align:left;">Record/columns:</th>
+<td style="text-align:left;">1/2-5
+</td>
+</tr>
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+alphavlist=nesfx0.htm
+hdr1=nesx01.htm#1.HEADING|Household
+hdr2=nesx01.htm#2.HEADING|Technical
+var=rectype|Record type
+#vlink=nes0001.htm#rectype
+var=year|Census year
+#vlink=nes0001.htm#year
