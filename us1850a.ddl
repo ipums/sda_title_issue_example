@@ -1,7 +1,7 @@
 title= United States 1850
 lang =	en-US
 records/case = 1
-reclen       = 291
+reclen       = 5
 *
 name         = CASEID
 type         = numeric
